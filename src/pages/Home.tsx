@@ -1,7 +1,14 @@
-import Slider from "../components/Slider";
+import OurServices from "../components/OurServices/OurServices";
+import YoutubeEmbed from "../components/YoutubeEmbed";
 
 const Home: React.FC = () => {
-  return <Slider />;
+  return (
+    <>
+      <YoutubeEmbed />
+      {/* <Slider /> */}
+      <OurServices />
+    </>
+  );
 };
 
 export default Home;
