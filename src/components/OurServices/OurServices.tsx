@@ -60,7 +60,7 @@ const OurServices: React.FC = () => {
 
   return (
     <div style={{}}>
-      <h2 style={{ textAlign: "center" }}>Servicios</h2>
+      {/* <h2 style={{ textAlign: "center" }}>Servicios</h2> */}
       <Row gutter={[32, 32]}>
         {services.map((service: Service) => (
           <Col xs={24} sm={12} md={8} key={service.title} ref={ref}>
@@ -71,7 +71,13 @@ const OurServices: React.FC = () => {
               bordered={false}
             >
               <Card.Meta description={service.description} />
-              {/* <Button type="link">Mas Información</Button> */}
+              <Button
+                type="link"
+                style={{ padding: 0 }}
+                href={`http://api.whatsapp.com/send?phone=+50495501103&text=Buen día me interesa el servicio de ${service.title}, me puede dar mas información.`}
+              >
+                Me interesa
+              </Button>
             </AnimatedCard>
           </Col>
         ))}

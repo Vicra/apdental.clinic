@@ -1,7 +1,13 @@
+import { Layout } from "antd";
+import ContactForm from "../common/ContactForm";
+
 const Contact: React.FC = () => {
   return (
     <>
-      <h1>Contact</h1>
+      <Layout style={{ margin: "2rem", backgroundColor: "white" }}>
+        <h1>Ponte en Contacto</h1>
+        <ContactForm />
+      </Layout>
     </>
   );
 };
