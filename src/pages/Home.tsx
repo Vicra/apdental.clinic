@@ -4,7 +4,7 @@ import YoutubeEmbed from "../components/YoutubeEmbed";
 const Home: React.FC = () => {
   return (
     <>
-      <YoutubeEmbed />
+      {/* <YoutubeEmbed /> */}
       {/* <Slider /> */}
       <OurServices />
     </>
