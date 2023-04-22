@@ -1,5 +1,9 @@
 import { Layout, Row, Col, Typography, Divider } from "antd";
-import { MailOutlined, WhatsAppOutlined } from "@ant-design/icons";
+import {
+  MailOutlined,
+  WhatsAppOutlined,
+  EnvironmentOutlined,
+} from "@ant-design/icons";
 
 const { Footer } = Layout;
 const { Text } = Typography;
@@ -19,15 +23,10 @@ const DentalFooter = () => {
                   alt="Dental Logo"
                   style={{ height: "150px" }}
                 />
-                {/* <Divider />
-                <Text strong>Dirección</Text>
-                <br />
-                <Text>
-                  <EnvironmentOutlined /> 7 calle 20 avenida, Bo. Rio Piedras
-                </Text> */}
+                <Divider />
               </div>
             </Col>
-            <Col xs={24} sm={8} md={6}>
+            <Col>
               <div
                 style={{
                   textAlign: "center",
@@ -39,42 +38,39 @@ const DentalFooter = () => {
                 <Text>
                   <strong>Horario</strong>
                   <br />
-                  Lunes - Domingo: 8am - 5pm <br />
-                  Atención con cita previa
+                  Lunes - Domingo
+                  <br />
+                  8am - 5pm <br />
+                  Atención con cita previa <br />
+                  <br />
+                  <EnvironmentOutlined /> 7 calle 20 avenida, Bo. Rio Piedras
                 </Text>
               </div>
             </Col>
-            <Col xs={24} sm={8} md={6}>
+            <Col>
               <div
                 style={{
-                  textAlign: "center",
                   display: "flex",
                   alignItems: "center",
                   height: "100%",
+                  textAlign: "center",
                 }}
               >
                 <Text>
-                  <strong>Contactanos</strong>
+                  <strong>Contáctanos</strong>
                   <br />
                   <WhatsAppOutlined /> (504) 9550-1103
                   <br />
                   <MailOutlined /> apdentalclinichn@gmail.com
                 </Text>
-                {/* <Text strong></Text>
-                <br />
-                <Text></Text>
-                <br />
-                <Text></Text> */}
               </div>
             </Col>
           </Row>
           <Divider style={{ margin: "20px 0" }} />
         </div>
-        {/* <div style={{ flexShrink: 0 }}> */}
         <div style={{ textAlign: "center" }}>
-          <Text>&copy; 2023 AP Dental Clinic.</Text>
+          <Text>&copy; {new Date().getFullYear()} Guacamayan Software.</Text>
         </div>
-        {/* </div> */}
       </div>
     </Footer>
   );

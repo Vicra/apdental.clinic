@@ -57,14 +57,10 @@ const AnimatedCard = animated(Card);
 
 const OurServices: React.FC = () => {
   const [ref, inView] = useInView({ threshold: 0.9, triggerOnce: true });
-  const fade = useSpring({
-    opacity: inView ? 1 : 0,
-    transform: inView ? "translateY(0)" : "translateY(0)",
-  });
 
   return (
-    <div style={{ padding: "50px 0" }}>
-      <h2 style={{ textAlign: "center", marginBottom: "50px" }}>Servicios</h2>
+    <div style={{}}>
+      <h2 style={{ textAlign: "center" }}>Servicios</h2>
       <Row gutter={[32, 32]}>
         {services.map((service: Service) => (
           <Col xs={24} sm={12} md={8} key={service.title} ref={ref}>
@@ -73,7 +69,6 @@ const OurServices: React.FC = () => {
               cover={service.img}
               title={service.title}
               bordered={false}
-              style={fade}
             >
               <Card.Meta description={service.description} />
               {/* <Button type="link">Mas Información</Button> */}
