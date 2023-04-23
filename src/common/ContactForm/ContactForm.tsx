@@ -29,21 +29,28 @@ const ContactForm = () => {
   };
 
   return (
-    <Form<ContactFormValues> form={form} onFinish={handleSubmit}>
+    <Form<ContactFormValues>
+      form={form}
+      onFinish={handleSubmit}
+      layout="vertical"
+    >
       <Form.Item
         name="name"
-        label="Name"
-        rules={[{ required: true, message: "Please enter your name." }]}
+        label="Nombre"
+        rules={[{ required: true, message: "Porfavor ingrese su nombre." }]}
       >
         <Input />
       </Form.Item>
 
       <Form.Item
         name="email"
-        label="Email"
+        label="Correo Electrónico"
         rules={[
-          { required: true, message: "Please enter your email address." },
-          { type: "email", message: "Please enter a valid email address." },
+          {
+            required: true,
+            message: "Porfavor ingrese su correo electrónico.",
+          },
+          { type: "email", message: "Ingrese un correo electrónico valido." },
         ]}
       >
         <Input />
@@ -51,15 +58,15 @@ const ContactForm = () => {
 
       <Form.Item
         name="message"
-        label="Message"
-        rules={[{ required: true, message: "Please enter your message." }]}
+        label="Mensaje"
+        rules={[{ required: true, message: "Porfavor ingrese un mensaje." }]}
       >
         <Input.TextArea rows={4} />
       </Form.Item>
 
       <Form.Item>
         <Button type="primary" htmlType="submit" loading={submitting}>
-          Submit
+          Enviar
         </Button>
       </Form.Item>
     </Form>
