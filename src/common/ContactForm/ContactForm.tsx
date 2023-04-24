@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Form, Input, Button, message } from "antd";
-import { FormInstance } from "antd/lib/form";
 
 interface ContactFormValues {
   name: string;
@@ -19,6 +18,7 @@ const ContactForm = () => {
     try {
       // Your code to handle the form submission goes here, e.g.:
       // await api.sendContactForm(values);
+
       message.success("Thank you for contacting us!");
       form.resetFields();
     } catch (error) {
@@ -29,47 +29,49 @@ const ContactForm = () => {
   };
 
   return (
-    <Form<ContactFormValues>
-      form={form}
-      onFinish={handleSubmit}
-      layout="vertical"
-    >
-      <Form.Item
-        name="name"
-        label="Nombre"
-        rules={[{ required: true, message: "Porfavor ingrese su nombre." }]}
+    <div className="contact-form-container">
+      <Form<ContactFormValues>
+        form={form}
+        onFinish={handleSubmit}
+        layout="vertical"
       >
-        <Input />
-      </Form.Item>
+        <Form.Item
+          name="name"
+          label="Nombre"
+          rules={[{ required: true, message: "Porfavor ingrese su nombre." }]}
+        >
+          <Input />
+        </Form.Item>
 
-      <Form.Item
-        name="email"
-        label="Correo Electrónico"
-        rules={[
-          {
-            required: true,
-            message: "Porfavor ingrese su correo electrónico.",
-          },
-          { type: "email", message: "Ingrese un correo electrónico valido." },
-        ]}
-      >
-        <Input />
-      </Form.Item>
+        <Form.Item
+          name="email"
+          label="Correo Electrónico"
+          rules={[
+            {
+              required: true,
+              message: "Porfavor ingrese su correo electrónico.",
+            },
+            { type: "email", message: "Ingrese un correo electrónico valido." },
+          ]}
+        >
+          <Input />
+        </Form.Item>
 
-      <Form.Item
-        name="message"
-        label="Mensaje"
-        rules={[{ required: true, message: "Porfavor ingrese un mensaje." }]}
-      >
-        <Input.TextArea rows={4} />
-      </Form.Item>
+        <Form.Item
+          name="message"
+          label="Mensaje"
+          rules={[{ required: true, message: "Porfavor ingrese un mensaje." }]}
+        >
+          <Input.TextArea rows={4} />
+        </Form.Item>
 
-      <Form.Item>
-        <Button type="primary" htmlType="submit" loading={submitting}>
-          Enviar
-        </Button>
-      </Form.Item>
-    </Form>
+        <Form.Item>
+          <Button type="primary" htmlType="submit" loading={submitting}>
+            Enviar
+          </Button>
+        </Form.Item>
+      </Form>
+    </div>
   );
 };
 

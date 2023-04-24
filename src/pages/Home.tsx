@@ -2,7 +2,7 @@ import { Layout } from "antd";
 import Banner from "../common/Banner";
 import LocationMap from "../common/LocationMap/LocationMap";
 import OurServices from "../components/OurServices/OurServices";
-import YoutubeEmbed from "../components/YoutubeEmbed";
+// import YoutubeEmbed from "../components/YoutubeEmbed";
 
 const Home: React.FC = () => {
     return (

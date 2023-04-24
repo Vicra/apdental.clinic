@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { HomeOutlined } from "@ant-design/icons";
+// import { HomeOutlined } from "@ant-design/icons";
 import type { MenuProps } from "antd";
 import { Menu } from "antd";
 
@@ -31,9 +31,9 @@ const TopMenu: React.FC<{ isInline?: boolean }> = ({ isInline = false }) => {
     const [current, setCurrent] = useState(window.location.pathname);
 
     useEffect(() => {
-        if (current != window.location.pathname)
+        if (current !== window.location.pathname)
             setCurrent(window.location.pathname);
-    }, [current, window.location.pathname]);
+    }, [current]);
 
     const onClick: MenuProps["onClick"] = (e) => {
         console.log(e.key);

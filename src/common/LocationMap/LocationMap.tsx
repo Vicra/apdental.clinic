@@ -36,7 +36,7 @@ const LocationMap: React.FC<LocationMapProps> = ({ latitude, longitude }) => {
             // Clean up the script tag
             document.head.removeChild(script);
         };
-    }, [latitude, longitude]);
+    }, [latitude, longitude, googleMapsSrc]);
 
     return (
         <Card>
