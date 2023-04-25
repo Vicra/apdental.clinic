@@ -11,10 +11,10 @@ const items: MenuProps["items"] = [
     ),
     key: "/",
   },
-  {
-    label: <a href="/about">Quienes Somos</a>,
-    key: "/about",
-  },
+  // {
+  //   label: <a href="/about">Quienes Somos</a>,
+  //   key: "/about",
+  // },
   // {
   //   label: <a href="/contact">Contacto</a>,
   //   key: "/contact",
