@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Card } from "antd";
+import env from "react-dotenv";
 
 interface LocationMapProps {
     latitude: number;
@@ -7,7 +8,7 @@ interface LocationMapProps {
 }
 
 const LocationMap: React.FC<LocationMapProps> = ({ latitude, longitude }) => {
-    const googleMapsApiKey = "AIzaSyCKCcjjb2i6zo1lszLWICNbVjdoqywGlwA";
+    const googleMapsApiKey = env.REACT_APP_GOOGLE_API_KEY;
     const googleMapsSrc = `https://maps.googleapis.com/maps/api/js?key=${googleMapsApiKey}`;
 
     useEffect(() => {

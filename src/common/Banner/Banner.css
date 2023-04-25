@@ -1,0 +1,17 @@
+@media only screen and (max-width: 600px) {
+  .desktopBanner {
+    display: none;
+  }
+  .mobileBanner {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .mobileBanner {
+    display: none;
+  }
+  .desktopBanner {
+    display: block;
+  }
+}
