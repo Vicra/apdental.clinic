@@ -5,13 +5,14 @@ import { ConfigProvider } from "antd";
 
 import { MenuOutlined } from "@ant-design/icons";
 import TopMenu from "./common/TopMenu/TopMenu";
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import DentalFooter from "./common/Footer";
+import Schedule from "./components/Schedule";
 
 const App: React.FC = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -56,6 +57,7 @@ const App: React.FC = () => {
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="schedule" element={<Schedule />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
