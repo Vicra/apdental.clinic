@@ -12,13 +12,13 @@ interface Service {
 const services: Service[] = [
   {
     title: "Limpieza con Ultrasonido",
-    img: <img src="/services/cleaning.jpeg" alt="" />,
+    img: <img src="/services/cleaning.jpeg" alt="dientes limpios" />,
     description:
       "Elimina la placa y el sarro de los dientes y las encías. Eliminar manchas, mantener la salud bucal y prevenir enfermedades dentales. ",
   },
   {
     title: "Blanqueamiento dental",
-    img: <img src="/services/blanqueamiento.jpeg" alt="" />,
+    img: <img src="/services/blanqueamiento.jpeg" alt="dientes blancos" />,
     description:
       "Procedimiento estético que se utiliza para aclarar el color de los dientes y mejorar su apariencia. Se realiza mediante la aplicación de un agente blanqueador, peróxido de hidrógeno.",
     moreInfo: `El blanqueamiento dental es un procedimiento estético que se utiliza para aclarar el color de los dientes y mejorar su apariencia. Se realiza mediante la aplicación de un agente blanqueador, generalmente peróxido de hidrógeno o carbamida, que actúa sobre las manchas y la decoloración en la superficie del esmalte dental.
@@ -27,13 +27,13 @@ const services: Service[] = [
   },
   {
     title: "Tratamiento de Caries",
-    img: <img src="/services/caries.png" alt="" />,
+    img: <img src="/services/caries.png" alt="Molar con caries" />,
     description:
       "Eliminar la caries o la cavidad en el diente y restaurar la estructura dental afectada. Es importante tratar las caries de manera temprana para evitar la progresión y posibles complicaciones, como infecciones o pérdida dental.",
   },
   {
     title: "Diseño de sonrisa",
-    img: <img src="/services/disenio.jpeg" alt="" />,
+    img: <img src="/services/disenio.jpeg" alt="sonrisa perfecta" />,
     description:
       "El objetivo es lograr una sonrisa más atractiva y armoniosa, que se adapte a las características faciales y personales de cada individuo.",
     moreInfo:
@@ -41,13 +41,13 @@ const services: Service[] = [
   },
   {
     title: "Protesis",
-    img: <img src="/services/protesis.jpeg" alt="" />,
+    img: <img src="/services/protesis.jpeg" alt="protesis dental" />,
     description:
       "Las prótesis dentales pueden ser removibles o fijas y se utilizan para reemplazar uno o varios dientes o para restaurar la dentadura completa.",
   },
   {
     title: "Extracciones",
-    img: <img src="/services/extracciones.jpeg" alt="" />,
+    img: <img src="/services/extracciones.jpeg" alt="dolor de muelas" />,
     description:
       "Caries avanzada, la enfermedad periodontal, la fractura del diente, la falta de espacio para la dentición adecuada o la necesidad de una extracción previa al tratamiento ortodóntico.",
   },

@@ -42,9 +42,12 @@ const LocationMap: React.FC<LocationMapProps> = ({ latitude, longitude }) => {
   }, [latitude, longitude, googleMapsSrc]);
 
   return (
-    <Card>
-      <div id="map" style={{ height: "400px", width: "100%" }} />
-    </Card>
+    <>
+      <h1 style={{ display: "none" }}>Ubicación | Google Maps</h1>
+      <Card>
+        <div id="map" style={{ height: "400px", width: "100%" }} />
+      </Card>
+    </>
   );
 };
 

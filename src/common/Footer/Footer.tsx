@@ -24,7 +24,7 @@ const DentalFooter = () => {
               <div style={{ textAlign: "center" }}>
                 <img
                   src="/logo/full_logo_transparent.png"
-                  alt="Dental Logo"
+                  alt="company logo"
                   style={{ height: "150px" }}
                 />
               </div>

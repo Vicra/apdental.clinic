@@ -24,7 +24,7 @@ const Banner: React.FC<Props> = ({ imageUrl }) => {
           }}
         ></Header>
       </div>
-      <img className="mobileBanner" src={imageUrl} alt="" />
+      <img className="mobileBanner" src={imageUrl} alt="banner de servicios" />
     </>
   );
 };
